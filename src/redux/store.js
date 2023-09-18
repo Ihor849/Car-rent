@@ -5,6 +5,7 @@ import { langReducer } from './langSlice';
 
 import {carsReducer} from "./cars/carsSlice"
 import { filterReducer } from "./filterSlice";
+import { modalReducer } from "./modalSlice";
 
 
 export const store = configureStore({
@@ -13,5 +14,6 @@ export const store = configureStore({
     lang: langReducer,
     cars: carsReducer,
     filter: filterReducer,
+    modal: modalReducer,
   },
 });

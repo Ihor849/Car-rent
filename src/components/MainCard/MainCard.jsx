@@ -6,8 +6,19 @@ import {
   ImgWrapper,
   RowWrapper,
 } from './MainCard.styled';
+import ModalPopup from "../ModalPopup/ModalPopup";
+import { useState } from 'react';
 
 export const MainCard = ({ item }) => {
+  const [showModal, setShowModal] = useState(false);
+  const onModalClose = () => {
+    setShowModal(false);
+};
+
+const onModalOpen = () => {
+    setShowModal(true);
+};
+
   return (
     <CardWrapper>
       <ImgWrapper>
@@ -39,7 +50,19 @@ export const MainCard = ({ item }) => {
         <p>{item.rentalCompany}</p>
       </RowWrapper>
 
-      <Button className="learnBtn">Learn more</Button>
+      <Button 
+            onClick={onModalOpen }
+            className="learnBtn">
+            Learn more</Button>
+
+            {showModal && (
+                <ModalPopup
+                    onClose={onModalClose}
+                    isOpen={showModal}
+                    // image={item.img}
+                    objectCar={item}
+                />
+            )}
     </CardWrapper>
   );
 };
