@@ -4,6 +4,7 @@ export const MainContainer = styled.div`
     display: grid;
     place-items: center;
     grid-template-rows: 80px auto 120px;
+    gap: 32px;
   
     background-color: var(--background-color);
     background-color: #ffffff;

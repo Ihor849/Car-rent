@@ -2,29 +2,26 @@ import { createSlice } from '@reduxjs/toolkit';
 import carsOperations from './carsOperations';
 
 const initialState = {
-  list: [],
+  listCars: [],
   item: {},
-  make: '',
-  year: null,
-  rentalPrice: '',
-  rentalConditions: '',
   loading: false,
   error: null,
   reRender: false,
 };
 
-const carsSlice = createSlice({
+export const carsSlice = createSlice({
   name: 'cars',
   initialState,
   extraReducers: builder => {
       builder
-          .addCase(carsOperations.getAllCars.pending, state => {
+          .addCase(carsOperations.getAllCars.pending,( state) => {
               state.error = null;
           })
           .addCase(
             carsOperations.getAllCars.fulfilled,
               (state, { payload }) => {
-                  state.listCars = payload.carss
+                console.log(payload);
+                  state.listCars = payload
               }
           )
           .addCase(
@@ -34,13 +31,13 @@ const carsSlice = createSlice({
               }
           )
 
-          .addCase(carsOperations.getCarById.pending, state => {
+          .addCase(carsOperations.getCarById.pending, (state) => {
             state.error = null;
         })
         .addCase(
           carsOperations.getCarById.fulfilled,
             (state, { payload }) => {
-                state.listCars = payload.carss
+                state.listCars = payload
             }
         )
         .addCase(
@@ -54,4 +51,4 @@ const carsSlice = createSlice({
 });
 
 
-export default carsSlice.reducer;
+export const carsReducer = carsSlice.reducer;

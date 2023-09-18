@@ -72,3 +72,15 @@ export const Page404 = styled.div`
   }
 
 `
+export const Gallery = styled.div`
+  display: grid;
+  gap: 30px;
+  
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+}
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+`
