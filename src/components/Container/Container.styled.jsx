@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     grid-template-rows: 80px auto 120px;
   
     background-color: var(--background-color);
-    background-color: #777;
+    background-color: #ffffff;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
