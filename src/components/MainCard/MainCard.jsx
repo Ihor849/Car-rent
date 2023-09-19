@@ -1,62 +1,79 @@
 import { iconHeart } from '../../images/icons';
 import { Button, FlatButton } from '../Button/Button';
+import { useDispatch } from 'react-redux';
 import {
   CardTitle,
   CardWrapper,
   ImgWrapper,
   RowWrapper,
 } from './MainCard.styled';
-import ModalPopup from "../ModalPopup/ModalPopup";
+import ModalPopup from '../ModalPopup/ModalPopup';
 import { useState } from 'react';
+import carsOperation from '../../redux/cars/carsOperations';
+import { addToFavorites } from '../../redux/cars/carsOperations';
 
 export const MainCard = ({ item }) => {
   const [showModal, setShowModal] = useState(false);
-  const carImg= item.img || item.photoLink
-  
-  console.log(item.photoLink);
+  const {
+    id,
+    img,
+    photoLink,
+    make,
+    year,
+    type,
+    rentalPrice,
+    address,
+    accessories,
+    rentalCompany,
+    mileage,
+  } = item;
+
+  const dispatch = useDispatch();
+
   const onModalClose = () => {
     setShowModal(false);
-};
+  };
 
-const onModalOpen = () => {
+  const onModalOpen = () => {
     setShowModal(true);
-};
+  };
+
+  const updatedCar = { ...item, favorite: !item.favorite };
 
   return (
     <CardWrapper>
-      <ImgWrapper style={{
-      backgroundImage: `url(${carImg})`,
-       backgroundPosition: "center",
-       backgroundSize:"cover",
-       backgroundRepeat:"no-repeat"}}>
-        <FlatButton className="likeBtn">{iconHeart}</FlatButton>
+      <ImgWrapper img={img || photoLink} like={item.favorite}>
+      <FlatButton 
+            onClick={()=> dispatch(carsOperation.addToFavorites({id, updatedCar}))}
+
+            className="likeBtn">
+                {iconHeart}
+            </FlatButton>
       </ImgWrapper>
       <CardTitle>
-        <p>
-          {item.make}, {item.year}
-        </p>
-        <p>{item.rentalPrice}</p>
-      </CardTitle>
+                <p>{make}, <span> {year} </span></p>
+                <p> {rentalPrice} </p>
+            </CardTitle>
 
-      <RowWrapper>
-        <p>{item.address.split(' ')[3].replace(/,/g, '')}</p>
-        <p>{item.address.split(' ')[4].replace(/,/g, '')}</p>
+            <RowWrapper className="card-rows">
+               <p> {address.split(' ')[3].replace(/,/g, '')} </p>
+               <p> {address.split(' ')[4].replace(/,/g, '')} </p>
+               <p> {rentalCompany} </p>
+               <p>{accessories[0].includes("Premium") || 
+                    accessories[1].includes("Premium") ||
+                    accessories[2].includes("Premium")
+                    ? "Premium" : ""}
+                </p>
+           </RowWrapper>
 
-        <p>{item.rentalCompany}</p>
-        
-        <p>{item.accessories[0].includes("Premium") || 
-        item.accessories[1].includes("Premium") ||
-        item.accessories[2].includes("Premium")? "Premium" : " "}</p>
-      </RowWrapper>
+           <RowWrapper className="card-rows">
+               <p> {type} </p>
+               <p> {make} </p>
+               <p> {mileage} </p>
+               <p> {rentalCompany} </p>
+           </RowWrapper>
 
-      <RowWrapper>
-        <p>{item.type}</p>
-        <p>{item.make}</p>
-        <p>{item.mileage}</p>
-        <p>{item.rentalCompany}</p>
-      </RowWrapper>
-
-      <Button 
+           <Button 
             onClick={onModalOpen }
             className="learnBtn">
             Learn more</Button>
@@ -65,8 +82,7 @@ const onModalOpen = () => {
                 <ModalPopup
                     onClose={onModalClose}
                     isOpen={showModal}
-                    // image={item.img}
-                    objectCar={item}
+                    item = {item}
                 />
             )}
     </CardWrapper>
