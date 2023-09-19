@@ -11,6 +11,9 @@ import { useState } from 'react';
 
 export const MainCard = ({ item }) => {
   const [showModal, setShowModal] = useState(false);
+  const carImg= item.img || item.photoLink
+  
+  console.log(item.photoLink);
   const onModalClose = () => {
     setShowModal(false);
 };
@@ -21,8 +24,11 @@ const onModalOpen = () => {
 
   return (
     <CardWrapper>
-      <ImgWrapper>
-        <img src={item.img} alt="car" />
+      <ImgWrapper style={{
+      backgroundImage: `url(${carImg})`,
+       backgroundPosition: "center",
+       backgroundSize:"cover",
+       backgroundRepeat:"no-repeat"}}>
         <FlatButton className="likeBtn">{iconHeart}</FlatButton>
       </ImgWrapper>
       <CardTitle>

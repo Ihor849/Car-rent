@@ -26,6 +26,7 @@ export const ImgWrapper = styled.div`
   border-radius: 14px;
   background-color: #7775;
 
+
   display: flex;
   align-items: start;
   justify-content: flex-end;
@@ -35,7 +36,7 @@ export const ImgWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    object-fit: cover;
+    object-fit: cover; 
   }
   & > button.likeBtn {
     position: absolute;
