@@ -38,11 +38,12 @@ export const MainCard = ({ item }) => {
     setShowModal(true);
   };
 
-  const updatedCar = { ...item, favorite: !item.favorite };
+  const updatedCar = { ...item, favorite: item.favorite.toString() };
 
   return (
     <CardWrapper>
-      <ImgWrapper img={img || photoLink} like={!!item.favorite}>
+      <ImgWrapper img={img || photoLink}
+       like={item.favorite.toString()}>
       <FlatButton 
             onClick={()=> dispatch(carsOperation.addToFavorites({id, updatedCar}))}
 

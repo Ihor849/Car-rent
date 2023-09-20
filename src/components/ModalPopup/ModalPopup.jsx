@@ -34,6 +34,7 @@ const ModalPopup = ({ isOpen, onClose, item }) => {
     rentalConditions,
     mileage,
   } = item;
+  console.log("img: " + img);
   const dispatch = useDispatch();
 
   useEffect(() => {
