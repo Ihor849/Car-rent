@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 
+
 export const HomeWrapper= styled.div`
   width: 100%;
   display: flex;
@@ -8,33 +9,27 @@ export const HomeWrapper= styled.div`
   align-items: center;
   gap: 12px;
 
-
-  &>.football-player{
-    width: 250px;
     @media screen and (min-width: 768px) {
-    width: 500px;
-}
+    min-height: 700px;
+    }
+
     @media screen and (min-width: 1280px) {
-    display: none;
-}
-  }
+      min-height: 700px;
+    }
+
 `
-export const PhonebookWrapper= styled.div`
-  width: 100%;
-
-  /* background-image: var(--background-image-contacts); */
-  transition: background-image 1s ease-in-out;
-  background-repeat: no-repeat;
-  background-position: center;  
-  background-size: cover;
-
-  &>.new {
-    position: absolute;
+export const CatalogueWrapper= styled.div`
+display: grid;
+  &>button.LoadMore{
+    width: 160px;
+    justify-self: center;
+    color: var(--blue);
+    background-color: transparent;
+    font-weight: 600;
+    margin-top: 50px;
   }
- 
+
 `
-
-
 
 export const HomeTitle = styled.h1`
 
@@ -42,8 +37,9 @@ export const HomeTitle = styled.h1`
 
   font-size: 40px;
   font-weight: 700;
-  color: var(--app-title);
+  color: var(--text-color);
   padding: 12px;
+  transition: all 1s ease-in-out;
 
   &+span {
     max-width: 800px;
@@ -60,10 +56,11 @@ export const Page404 = styled.div`
  display: grid;
  place-items: center;
  text-align: center;
-
+ color: var(--text-color);
+ transition: all 1s ease-in-out;
   & > svg {
        fill: var(--text-color);
-        transition: fill 1s ease-in-out;
+        transition: all 1s ease-in-out;
 
   }
   & > b {
@@ -74,11 +71,12 @@ export const Page404 = styled.div`
 `
 export const Gallery = styled.div`
   display: grid;
+  place-items: center;
   gap: 30px;
   
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
     @media screen and (min-width: 1280px) {
       grid-template-columns: repeat(4, 1fr);

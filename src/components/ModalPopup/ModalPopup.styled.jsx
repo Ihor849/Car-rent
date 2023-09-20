@@ -41,41 +41,58 @@ export const ModalContainer = styled.div`
     'c5';
     gap: 12px;  
     background-color: var(--white);
-    padding: 40px;
-    border-radius: 24px;
+    padding: 20px;
+    border-radius: 14px;
     z-index: 50;
-    background-color: var(--background-color-form);
-    color: var(--text-color);
+    background-color: #fff;
+    color: var(--black);
 
     @media screen and (min-width: 768px) {
     width: 541px;
     height: 752px;
+    padding: 40px;
+    border-radius: 24px;
     }
 
     &>button.modal-close{
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 8px;
+        right: 8px;
 
         &>svg {
+        color: var(--main-text);
+        }
+    @media screen and (min-width: 768px) {
+            top: 16px;
+            right: 16px;
+            &>svg {
             scale: 1.5;
-            color: var(--text-color);
+         
         }
     }
-    &>button.rental-car{
-        grid-area: c5;
-        align-self: flex-end;
+
+    }
+    `;
+
+export const RentalCarWrapp = styled.div`
+    grid-area: c5;
+    align-self: flex-end;
+    &>a>.rental-car{
         width: 168px;
     }
-  `;
+  `
 
-export const ModalImage = styled.img`
+export const ModalImage = styled.div.attrs(props => ({
+    img: props.img,
+    like: props.like,
+  }))`
 grid-area: c1;
-/* max-width: 100%;
-height: auto; */
 width:240px;
 height: 240px;
 border-radius: 14px;
+    background-image: url(${props => props.img &&  props.img});
+    background-size: cover;
+    background-position: center;  
 
 @media screen and (min-width: 768px) {
   width: 461px;
@@ -102,16 +119,19 @@ export const CarDescription = styled.div`
 
     &>p.details{
         font-size: 14px;
-        width: 461px;
-        /* overflow: hidden; */
-        /* text-overflow: ellipsis;  */
-        /* white-space: nowrap; */
-        /* -webkit-box-orient: vertical ; */
-        /* -webkit-line-clamp: 2 ;  */
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        -webkit-box-orient: vertical ; 
+        -webkit-line-clamp: 2 ; 
+    }
+
+    &>.tech-params {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
     }
 `
 export const CarAccessories = styled.div`
-
     grid-area: c3;
     display: grid;
     gap: 8px;
@@ -119,7 +139,13 @@ export const CarAccessories = styled.div`
         font-size: 14px;
     }
     &> .accessories{
+        width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @media screen and (min-width: 768px) {
         width: 461px;
+       }   
     }
 `
 export const RentalConditions  = styled.div`
@@ -135,12 +161,12 @@ export const RentalConditions  = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    width: 461px;
+    font-family: Montserrat,  sans-serif ;
         &>div{
             display: inline-flex;
             gap: 4px;
             padding:6px 8px;
-            background-color: #7775;
+            background-color: #f9f9f9;
             border-radius: 16px;
         }
     &>div>span {

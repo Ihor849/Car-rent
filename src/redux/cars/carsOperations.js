@@ -25,9 +25,9 @@ const getCarById = createAsyncThunk('/cars_list/carsById', async (id, thunkAPI) 
 const addToFavorites = createAsyncThunk('/cars_list/add', async (updateObject, thunkAPI) => {
   try {
     const { id, updatedCar } = updateObject;
-    console.log(id)
+    
     const response = await axios.put(
-        `/cars/${id}`, updatedCar
+        `/cars_list/${id}`, updatedCar
     )
     return response.data;
   } catch (error) {

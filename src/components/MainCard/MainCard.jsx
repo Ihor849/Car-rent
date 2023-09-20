@@ -10,7 +10,7 @@ import {
 import ModalPopup from '../ModalPopup/ModalPopup';
 import { useState } from 'react';
 import carsOperation from '../../redux/cars/carsOperations';
-import { addToFavorites } from '../../redux/cars/carsOperations';
+
 
 export const MainCard = ({ item }) => {
   const [showModal, setShowModal] = useState(false);
@@ -42,7 +42,7 @@ export const MainCard = ({ item }) => {
 
   return (
     <CardWrapper>
-      <ImgWrapper img={img || photoLink} like={item.favorite}>
+      <ImgWrapper img={img || photoLink} like={!!item.favorite}>
       <FlatButton 
             onClick={()=> dispatch(carsOperation.addToFavorites({id, updatedCar}))}
 

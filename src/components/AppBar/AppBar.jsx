@@ -17,27 +17,18 @@ export const AppBar = () => {
     const themeInvertor =(theme) => {
      return  theme === 'light' ?  'dark'  :  'light'
     }
-    const languageInvertor =(language) => {
-     return  language === 'english' ?  'ukrainian'  :  'english'
-    }
+   
 
     const themeMaker =() => {
       localStorage.setItem('theme', themeInvertor(theme))
       dispatch(toggleTheme())
     }
-    const languageMaker =() => {
-      localStorage.setItem('language', languageInvertor(language))
-      dispatch(toggleLang())
-    }
+    
   
     return (
       <StyledHeader >
  
-        <LangBtn  
-        onClick={languageMaker}
-        type="button">
-        {(localStorage.getItem('language' ) || language) === 'english' ?  'EN' :  'UA'}
-        </LangBtn>
+       
 
         <ThemeBtn 
         onClick={themeMaker}

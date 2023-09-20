@@ -1,16 +1,23 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-   /* justify-content: space-between; */
+   justify-content:end;
    gap: 20px;
+
+   &>button.ThemeBtn{
+       display: none;
+       
+       @media screen and (min-width: 768px) {
+           display: flex;
+           margin-left: auto;
+    }
+   }
 `
 
 export const ThemeBtn = styled.button`
-   /* margin-left: auto; */
- 
     width: 50px;
     height: 50px;
     display: flex;
@@ -23,16 +30,13 @@ export const ThemeBtn = styled.button`
     transition: all 0.4ms ease-in-out;
     cursor: pointer;
  
-    
-
     &> svg {
         transition:  fill 1s ease-in-out;
-        fill: var(--text-color);
+        fill: var(--yellow);
         }
 
     &:hover{
         background-color: #eee5;
-
 
         &> svg {
             transition:  fill 1s ease-in-out;
@@ -40,7 +44,6 @@ export const ThemeBtn = styled.button`
         }
     }
 `
-
 export const LangBtn = styled.button`
     margin-left: auto;
     width: 50px;   
@@ -57,7 +60,6 @@ export const LangBtn = styled.button`
     color: var(--text-color) ;
     font-weight: 600;
     
-
     &> svg {
         transition:  fill 1s ease-in-out;
         fill: var(--text-color);
@@ -65,11 +67,9 @@ export const LangBtn = styled.button`
 
     &:hover{
         background-color: #eee5;
-
-
         &> svg {
             transition:  fill 1s ease-in-out;
             fill:  ${props => props.theme === 'light' ? '#eee' : '#222'};
         }
     }
-    `
+`

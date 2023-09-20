@@ -3,8 +3,7 @@ import carsOperations from './carsOperations';
 
 const initialState = {
   listCars: [],
-  item: {},
-  favorites: [],
+  favorites: 0,
   loading: false,
   error: null,
   reRender: false,
@@ -17,34 +16,39 @@ export const carsSlice = createSlice({
     builder
       .addCase(carsOperations.getAllCars.pending, state => {
         state.error = null;
+              state.loading = true;
       })
       .addCase(carsOperations.getAllCars.fulfilled, (state, { payload }) => {
-        console.log(payload);
-        state.listCars = payload;
+        state.listCars = payload
+        state.favorites = payload.filter((item) => item.favorite === true).length 
+        state.loading = false;
       })
       .addCase(carsOperations.getAllCars.rejected, (state, { payload }) => {
         state.error = payload;
+        state.loading = false;
       })
 
       
       .addCase(
         carsOperations.addToFavorites.pending, (state) => {
-        state.error = null;
-        state.reRender = true;
+          state.error = null;
+          state.reRender = true;
+          state.loading = true;
     })
     .addCase(
       carsOperations.addToFavorites.fulfilled,
-        (state, { payload }) => {
-            console.log('payload', payload)
-            state.reRender = false;
-            // state.favorites = [...state.favorites, payload]
+        (state) => {
+            
+          state.reRender = false;
+          state.loading = false;
         }
     )
     .addCase(
       carsOperations.addToFavorites.rejected,
         (state, { payload }) => {
-            state.error = payload;
-            state.reRender = false;
+          state.error = payload;
+          state.reRender = false;
+          state.loading = false;
         }
     )
       
