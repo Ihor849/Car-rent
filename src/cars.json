@@ -23,8 +23,8 @@
       "rentalCompany": "Luxury Car Rentals",
       "address": "123 Example Street, Kiev, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-      "mileage": 5858,
-      "favorite": "false"
+      "mileage": 5858
+      
   },
   {
       "id": "9584",
@@ -50,8 +50,8 @@
       "rentalCompany": "Premium Auto Rentals",
       "address": "456 Example Avenue, Lviv, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-      "mileage": 5352,
-      "favorite": "false"
+      "mileage": 5352
+      
   },
   {
       "id": "9586",
@@ -77,8 +77,8 @@
       "rentalCompany": "Luxury Car Rentals",
       "address": "789 Example Boulevard, Odessa, Ukraine",
       "rentalConditions": "Minimum age: 23\nValid driver's license\nCredit card required",
-      "mileage": 5966,
-      "favorite": "false"
+      "mileage": 5966
+      
   },
   {
       "id": "9587",
@@ -104,8 +104,8 @@
       "rentalCompany": "Adventure Car Rentals",
       "address": "321 Example Road, Kharkiv, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-      "mileage": 4771,
-      "favorite": "false"
+      "mileage": 4771
+      
   },
   {
       "id": "9590",
@@ -131,8 +131,8 @@
       "rentalCompany": "Adventure Car Rentals",
       "address": "987 Example Street, Kyiv, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-      "mileage": 4061,
-      "favorite": "false"
+      "mileage": 4061
+      
   },
   {
       "id": "9591",
@@ -158,8 +158,8 @@
       "rentalCompany": "City Car Rentals",
       "address": "654 Example Avenue, Lviv, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-      "mileage": 5374,
-      "favorite": "false"
+      "mileage": 5374
+      
   },
   {
       "id": "9593",
@@ -185,8 +185,8 @@
       "rentalCompany": "Luxury Car Rentals",
       "address": "321 Example Road, Odessa, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-      "mileage": 6282,
-      "favorite": "false"
+      "mileage": 6282
+      
   },
   {
       "id": "9596",
@@ -212,8 +212,8 @@
       "rentalCompany": "Elite Car Rentals",
       "address": "123 Example Boulevard, Kharkiv, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nInsurance coverage required",
-      "mileage": 6173,
-      "favorite": "false"
+      "mileage": 6173
+      
   },
   {
       "id": "9597",
@@ -239,8 +239,8 @@
       "rentalCompany": "Premium Car Rentals",
       "address": "789 Example Square, Dnipro, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-      "mileage": 4989,
-      "favorite": "false"
+      "mileage": 4989
+      
   },
   {
       "id": "9598",
@@ -266,8 +266,8 @@
       "rentalCompany": "Economy Car Rentals",
       "address": "456 Example Lane, Zaporizhzhia, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-      "mileage": 4591,
-      "favorite": "false"
+      "mileage": 4591
+      
   },
   {
       "id": "9583",
@@ -293,8 +293,8 @@
       "rentalCompany": "Fun Car Rentals",
       "address": "234 Example Place, Vinnytsia, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-      "mileage": 6275,
-      "favorite": "false"
+      "mileage": 6275
+      
   },
   {
       "id":"9606",
@@ -320,8 +320,8 @@
       "rentalCompany": "Luxury Car Rentals",
       "address": "567 Example Street, Lviv, Ukraine",
       "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-      "mileage": 4317,
-      "favorite": "false"
+      "mileage": 4317
+      
   },
   {
       "id": "9612",
@@ -347,8 +347,8 @@
       "rentalCompany": "Exquisite Car Rentals",
       "address": "789 Example Boulevard, Kyiv, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
-      "mileage": 5722,
-      "favorite": "false"
+      "mileage": 5722
+      
   },
   {
       "id": "9616",
@@ -403,7 +403,7 @@
       "mileage": 5091
   },
   {
-      "id": 9629,
+      "id": "9629",
       "year": 2009,
       "make": "Lamborghini",
       "model": "Murcielago",
@@ -429,7 +429,7 @@
       "mileage": 5832
   },
   {
-      "id": 9631,
+      "id": "9631",
       "year": 2011,
       "make": "Audi",
       "model": "A5",
@@ -455,7 +455,7 @@
       "mileage": 4635
   },
   {
-      "id": 9634,
+      "id": "9634",
       "year": 2001,
       "make": "BMW",
       "model": "Z8",
@@ -481,7 +481,7 @@
       "mileage": 5990
   },
   {
-      "id": 9655,
+      "id": "9655",
       "year": 1998,
       "make": "Chevrolet",
       "model": "Camaro",
@@ -507,7 +507,7 @@
       "mileage": 6330
   },
   {
-      "id": 9685,
+      "id": "9685",
       "year": 2006,
       "make": "Mercedes-Benz",
       "model": "SLK-Class",
@@ -533,12 +533,12 @@
       "mileage": 6280
   },
   {
-      "id": 9660,
+      "id": "9660",
       "year": 2020,
       "make": "Chrysler",
       "model": "Voyager",
       "type": "Van/Minivan",
-      "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
+      "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
       "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
       "fuelConsumption": "8.2",
       "engineSize": "3.6L V6",
@@ -559,12 +559,12 @@
       "mileage": 5807
   },
   {
-      "id": 9630,
+      "id": "9630",
       "year": 2020,
       "make": "Kia",
       "model": "Rio",
       "type": "Hatchback",
-      "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
+      "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
       "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
       "fuelConsumption": "6.2",
       "engineSize": "1.6L 4-cylinder",
@@ -585,12 +585,12 @@
       "mileage": 4618
   },
   {
-      "id": 9586,
+      "id": "9586",
       "year": 2020,
       "make": "Volvo",
       "model": "XC60",
       "type": "SUV",
-      "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
+      "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
       "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
       "fuelConsumption": "8.5",
       "engineSize": "2.0L 4-cylinder",
@@ -611,12 +611,12 @@
       "mileage": 6618
   },
   {
-      "id": 9618,
+      "id": "9618",
       "year": 2020,
       "make": "Land Rover",
       "model": "Range Rover Sport",
       "type": "SUV",
-      "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
+      "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
       "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
       "fuelConsumption": "11.8",
       "engineSize": "3.0L V6",
@@ -635,14 +635,16 @@
       "address": "654 Example Street, Lviv, Ukraine",
       "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
       "mileage": 4856
+     
+      
   },
   {
-      "id": 9630,
+      "id": "9630",
       "year": 2020,
       "make": "Kia",
       "model": "Rio",
       "type": "Sedan, Hatchback",
-      "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
+      "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
       "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
       "fuelConsumption": "6.2",
       "engineSize": "1.6L 4-cylinder",
@@ -660,8 +662,8 @@
       "rentalCompany": "Economy Car Rentals",
       "address": "321 Example Lane, Kharkiv, Ukraine",
       "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-      "mileage": 6234,
-      "favorite": "false"
+      "mileage": 6234
+      
       
   }
 ]

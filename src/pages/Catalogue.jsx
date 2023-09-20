@@ -46,7 +46,7 @@ const Catalogue = () => {
    }
   useEffect(() => {
     dispatch(carsOperation.getAllCars());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, [dispatch, reRender]);
   
   const carSearch = () => {

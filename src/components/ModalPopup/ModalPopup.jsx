@@ -19,7 +19,6 @@ const ModalPopup = ({ isOpen, onClose, item }) => {
   const {
     id,
     img,
-    photoLink,
     make,
     year,
     model,
@@ -86,7 +85,7 @@ const ModalPopup = ({ isOpen, onClose, item }) => {
       }`}
     >
       <ModalContainer>
-        {( img || photoLink)  && <ModalImage src = { img|| photoLink} alt="Car Image" />}
+        { img   && <ModalImage img = {img}/>}
 
         <CarDescription>
           <div className="car-model">
