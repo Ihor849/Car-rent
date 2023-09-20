@@ -1,5 +1,5 @@
 import { HomeTitle, HomeWrapper } from "./Page.styled";
-import car from '../images/grand-cherokee-trailhawk (1).png'
+import car from '../images/ferrari-purosangue (1).png'
 
 export default function Home() {
 
@@ -7,7 +7,7 @@ export default function Home() {
     return (
       <HomeWrapper  >
         <HomeTitle  >
-         BEST CAR FOR RENT TODAY
+        BEST CAR FOR RENT 
         </HomeTitle>
         <img src={car} alt="car"/>
 
