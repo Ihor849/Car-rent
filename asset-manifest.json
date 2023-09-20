@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/car-rent/static/css/main.2caf2cb4.css",
-    "main.js": "/car-rent/static/js/main.683fdfac.js",
+    "main.js": "/car-rent/static/js/main.b737b4a6.js",
     "static/media/ferrari-purosangue (1).png": "/car-rent/static/media/ferrari-purosangue (1).64601187ea16149783d6.png",
     "static/media/react.svg": "/car-rent/static/media/react.5f6b35a1a429e1c088f52068d898cbc3.svg",
     "index.html": "/car-rent/index.html",
     "main.2caf2cb4.css.map": "/car-rent/static/css/main.2caf2cb4.css.map",
-    "main.683fdfac.js.map": "/car-rent/static/js/main.683fdfac.js.map"
+    "main.b737b4a6.js.map": "/car-rent/static/js/main.b737b4a6.js.map"
   },
   "entrypoints": [
     "static/css/main.2caf2cb4.css",
-    "static/js/main.683fdfac.js"
+    "static/js/main.b737b4a6.js"
   ]
 }
