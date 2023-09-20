@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/car-rent/static/css/main.073c9b0a.css",
-    "main.js": "/car-rent/static/js/main.9e746822.js",
-    "static/js/787.99b05aad.chunk.js": "/car-rent/static/js/787.99b05aad.chunk.js",
-    "static/media/logo.svg": "/car-rent/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/car-rent/static/css/main.2caf2cb4.css",
+    "main.js": "/car-rent/static/js/main.33df2119.js",
+    "static/media/ferrari-purosangue (1).png": "/car-rent/static/media/ferrari-purosangue (1).64601187ea16149783d6.png",
+    "static/media/react.svg": "/car-rent/static/media/react.5f6b35a1a429e1c088f52068d898cbc3.svg",
     "index.html": "/car-rent/index.html",
-    "main.073c9b0a.css.map": "/car-rent/static/css/main.073c9b0a.css.map",
-    "main.9e746822.js.map": "/car-rent/static/js/main.9e746822.js.map",
-    "787.99b05aad.chunk.js.map": "/car-rent/static/js/787.99b05aad.chunk.js.map"
+    "main.2caf2cb4.css.map": "/car-rent/static/css/main.2caf2cb4.css.map",
+    "main.33df2119.js.map": "/car-rent/static/js/main.33df2119.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9e746822.js"
+    "static/css/main.2caf2cb4.css",
+    "static/js/main.33df2119.js"
   ]
 }
